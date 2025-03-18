@@ -25,8 +25,8 @@ class CategoriesController extends Controller
             'name' => 'required|string|max:255',
         ]);
 
-        $product = categories::create($request->all());
-        return response()->json($product);
+        $categories = categories::create($request->all());
+        return response()->json($categories);
     }
 
     /**
